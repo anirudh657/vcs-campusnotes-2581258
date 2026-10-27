@@ -1,2 +1,3 @@
 Feature list
 Search notes by subject
+Share notes with friends
