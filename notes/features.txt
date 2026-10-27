@@ -1,1 +1,2 @@
 Feature list
+Search notes by subject
