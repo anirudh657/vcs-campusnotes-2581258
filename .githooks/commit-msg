@@ -1,0 +1,7 @@
+#!/bin/sh
+msg=$(head -n1 "$1")
+if [ ${#msg} -lt 10 ]; then
+  echo "Commit blocked: message shorter than 10 characters"; exit 1
+fi
+echo "$msg" | grep -Eq '^(feat|fix|docs|refactor|chore):' || {
+  echo "Commit blocked: use feat:, fix:, docs:, refactor: or chore:"; exit 1; }
